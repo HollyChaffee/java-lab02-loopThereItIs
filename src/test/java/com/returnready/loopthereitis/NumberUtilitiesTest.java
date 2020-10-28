@@ -21,7 +21,7 @@ public class NumberUtilitiesTest {
     public void testGetRange2A() {
         // : Given
         String expected = "01234";
-        int stop = 5;
+        int stop = 6;
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -34,7 +34,7 @@ public class NumberUtilitiesTest {
     public void testGetRange3A() {
         // : Given
         String expected = "012345678910111213141516171819";
-        int stop = 20;
+        int stop = 21;
 
         // : When
         String actual = NumberUtilities.getRange(stop);
