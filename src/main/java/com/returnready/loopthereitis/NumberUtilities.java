@@ -27,7 +27,7 @@ public class NumberUtilities {
 
     public static String getRange(int start, int stop) {
         String returnedRange = "";
-        for(int currentNumberInRange = 0; currentNumberInRange < stop - 1; currentNumberInRange++){
+        for(int currentNumberInRange = start; currentNumberInRange < stop; currentNumberInRange++){
             returnedRange = returnedRange + currentNumberInRange;
         }
         return returnedRange;
@@ -36,7 +36,7 @@ public class NumberUtilities {
 
     public static String getRange(int start, int stop, int step) {
         String returnedRange = "";
-        for(int currentNumberInRange = 0; currentNumberInRange < stop - 1; currentNumberInRange++){
+        for(int currentNumberInRange = start; currentNumberInRange < stop; currentNumberInRange = currentNumberInRange + step){
             returnedRange = returnedRange + currentNumberInRange;
         }
         return returnedRange;
